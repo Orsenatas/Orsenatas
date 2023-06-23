@@ -1,0 +1,7 @@
+ /etc/resolv.conf
+
+nameserver – IP адреса DNS сервера
+domain – доменне ім’я локального хоста
+search – які доменні імена шукати
+
+https://resk.ua/ua/dns-resolv-conf/
