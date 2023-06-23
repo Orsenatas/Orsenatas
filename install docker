@@ -1,0 +1,14 @@
+#install docker ubuntu 22.04
+ sudo apt update && sudo apt upgrade
+sudo apt install docker.io
+ docker --version
+dpkg -L docker.io
+ systemctl status docker
+
+#install docker compose 
+mkdir -p ~/.docker/cli-plugins/
+curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-comp>
+
+chmod +x ~/.docker/cli-plugins/docker-compose
+
+docker compose version
