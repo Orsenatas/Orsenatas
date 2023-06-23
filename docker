@@ -1,0 +1,26 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
+sudo systemctl status docker
+sudo docker images
+sudo docker ps 
+sudo docker ps -al
+sudo docker container ls
+-----------------------------------
+  Добавити в групу докер 
+sudo usermod -aG docker ${USER}
+su - ${USER}
+Щоб продовжити, вам буде запропоновано ввести пароль користувача.
+Підтвердьте, що вашого користувача додано до групи докерів, ввівши:
+groups
+Якщо вам потрібно додати користувача до групи докерів, під яким ви не ввійшли, явно оголосите це ім’я користувача за допомогою:
+sudo usermod -aG docker username
+------------------------------
+sudo docker -it номер контейнера bash - зайти в контейнер 
+exit - вийти з контейнера
+sudo docker comit 5513232132 newimages_v2:latest - створити images з контейнера 
+sudo docker compose up -d 
+sudo docker stop 545312212 
+docker run -it 
+docker ps -l - Щоб переглянути останній створений контейнер, передайте йому перемикач -l:
+docker start 1c08a7a0d0e4 - Щоб запустити зупинений контейнер, скористайтеся докером start, а потім ідентифікатором контейнера або назвою контейнера.
+docker rm adoring_kowalevski  
+  
